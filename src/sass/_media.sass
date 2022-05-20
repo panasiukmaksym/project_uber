@@ -1,0 +1,191 @@
+@media (max-width: 5000px)
+    .xs-visible
+        display: none
+    
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+    .mobile
+        &_item
+            width: 300px
+    footer
+        .footer_wrapper
+            .footer_links
+                width: 320px
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 8px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            margin-top: 21px
+            height: 40px
+            width: 100%
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+    .mobile
+        &_item
+            width: 220px
+    .car
+        &_black_bg
+            img
+                width: 90%
+    footer
+        .footer_wrapper
+            display: block
+            div
+                margin: 0 auto
+            .footer_center
+                margin-top: 10px
+                width: 100%
+            .footer_links
+                width: 350px
+            .footer_end
+                display: none
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        right: 0
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, 0.8)
+        transition: 1s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        &_link
+            font-size: 20px
+    .mobile
+        &_item
+            width: 300px
+            &_subtitle
+                font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 25px
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: white
+            margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px 
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .subheader
+        &_phone
+            display: block
+            margin-top: 10px
+            color: #fff
+            font-size: 18px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+        &_btn
+            width: 180px
+            height: 40px
+            display: block
+            margin: 0 auto
+            margin-top: 2px
+    .promo
+        &_header
+            line-height: 45px
+
+@media (max-width: 575px)
+    .subheader
+        height: 60px
+        &_official
+            display: none
+        &_logo
+            margin-top: 18px
+        &_phone
+            font-size: 12px
+            font-weight: 400
+            text-transform: uppercase
+            margin-top: 8px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 3px
+    .promo
+        min-height: 400px
+        padding: 133px 0 35px 0
+        &_header
+            line-height: 45px
+            font-size: 35px
+        &_descr
+            display: none
+        &_subheader
+            font-size: 20px
+            line-height: 30px
+        &_btn
+            margin-top: 72px
+    .menu
+        width: 85%
+    .title
+        font-size: 16px
+    footer
+        display: none
+    .mobile
+        &_item
+            width: 290px
+            &_subtitle
+                font-size: 18px
+    .car
+        height: 700px
+
+@media (max-width: 385px)
+    .car
+        height: 500px
+        &_uber_text
+            color: white
+            font-size: 12px
+    .world
+        &_link
+            display: block
+            font-size: 12px
